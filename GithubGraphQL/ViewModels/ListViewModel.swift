@@ -1,6 +1,6 @@
 import Apollo
 
-final class ViewModel {
+final class ListViewModel: SearchRepository {
   private let client: GraphQLClient
 
   init(client: GraphQLClient = ApolloClient.shared) {
