@@ -91,3 +91,32 @@ In your unit tests, you can instantiate a `MockGraphQLClient` and pass it to the
 let mockedResponse: SearchRepositoriesQuery.Data = // ...
 let viewModel = ViewModel(client: MockGraphQLClient<SearchRepositoriesQuery>(response: mockedResponse))
 ```
+### Comments and Observations
+
+I had some problems with my xcode, maybe because my personal mac is old, so sorry for haven't done much in these 4h.
+
+I started thinking about usint viewCode instead of storyboard, I started but because I haven't using view code for some time I wasted and in the end I choose try changing this in the end if I had some time.
+
+I choose to create protocols because with then I can uncouple the classes.
+I create models because I was thinking in using Decodable, but later I just thought that were better to use just like model for my list, then I create adapter methods to transform in these objects and use them in my list.
+
+I create the cell and the tableview just to show information in the beggining but when this would work I would put image for avatar at least, but after I was going to work in the communication between the viewModel and view controller.
+
+I didn't had time to work on the tests.
+
+What I would do if had some more time would be:
+- Finishing the viewModel and adding tretment for the 2 calls
+- Work in the tableView to show picture of avatar instead of the string path for it
+- Changing from storyboard to viewCode
+- Try to use Codable
+- Make the unit tests and see if UI tests is needed
+
+
+Thanks for the opportunite.
+
+Have a great week.
+
+=)
+
+
+
