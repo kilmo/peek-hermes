@@ -1,5 +1,4 @@
-struct PageInfo: Decodable {
-    let pageInfo: String
+struct PageInformation {
     let hasNextPage: Bool
     let hasPreviousPage: Bool
     let startCursor: String?

@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B0CC497282703BF008A76DC /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC496282703BF008A76DC /* PageInfo.swift */; };
+		1B0CC497282703BF008A76DC /* PageInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC496282703BF008A76DC /* PageInformation.swift */; };
 		1B0CC49C282703EA008A76DC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC49B282703EA008A76DC /* Repository.swift */; };
 		1B0CC4BB28271A88008A76DC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC4BA28271A88008A76DC /* ListTableViewCell.swift */; };
 		1B0CC4D52827206A008A76DC /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC4D42827206A008A76DC /* SearchRepository.swift */; };
+		1B0CC4DD2827246F008A76DC /* ListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CC4DC2827246F008A76DC /* ListViewModelDelegate.swift */; };
 		D806B6B527C71F1C006F594D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B427C71F1C006F594D /* Apollo */; };
 		D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B627C71F1C006F594D /* ApolloSQLite */; };
 		D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E7B1027C81B88000DEB5B /* MockData.swift */; };
@@ -50,10 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B0CC496282703BF008A76DC /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		1B0CC496282703BF008A76DC /* PageInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInformation.swift; sourceTree = "<group>"; };
 		1B0CC49B282703EA008A76DC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1B0CC4BA28271A88008A76DC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		1B0CC4D42827206A008A76DC /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		1B0CC4DC2827246F008A76DC /* ListViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelDelegate.swift; sourceTree = "<group>"; };
 		D84E7B1027C81B88000DEB5B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Abstractions.swift"; sourceTree = "<group>"; };
 		D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Search.swift"; sourceTree = "<group>"; };
@@ -118,7 +120,7 @@
 		1B0CC4912826FE9C008A76DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1B0CC496282703BF008A76DC /* PageInfo.swift */,
+				1B0CC496282703BF008A76DC /* PageInformation.swift */,
 				1B0CC49B282703EA008A76DC /* Repository.swift */,
 			);
 			path = Models;
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1B0CC4D42827206A008A76DC /* SearchRepository.swift */,
+				1B0CC4DC2827246F008A76DC /* ListViewModelDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -398,13 +401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0CC4BB28271A88008A76DC /* ListTableViewCell.swift in Sources */,
+				1B0CC4DD2827246F008A76DC /* ListViewModelDelegate.swift in Sources */,
 				D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */,
 				D9A10FA2216C4AFD007998EC /* ListViewController.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLClient.swift in Sources */,
 				D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */,
 				1B0CC4D52827206A008A76DC /* SearchRepository.swift in Sources */,
 				D9C8E128216DBA11002A64FC /* API.swift in Sources */,
-				1B0CC497282703BF008A76DC /* PageInfo.swift in Sources */,
+				1B0CC497282703BF008A76DC /* PageInformation.swift in Sources */,
 				D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */,
 				1B0CC49C282703EA008A76DC /* Repository.swift in Sources */,
 				D8F7605327C72F1400B1AB58 /* ListViewModel.swift in Sources */,
