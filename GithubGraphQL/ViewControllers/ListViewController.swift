@@ -8,6 +8,7 @@ class ListViewController: UIViewController {
     
     init(searchRepositories: SearchRepository) {
         self.searchRepositories = searchRepositories
+        super.init()
     }
     
     required init?(coder: NSCoder) {

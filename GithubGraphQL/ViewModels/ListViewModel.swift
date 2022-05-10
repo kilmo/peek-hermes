@@ -19,19 +19,19 @@ final class ListViewModel: SearchRepository {
                 self.delegate?.listViewModel(self, didFailWithError: error)
                 
             case let .success(results):
-                let pageInfo = adapterPageInfo(results.pageInfo)
-                let repositories = adapterRepositories(repositories: results.repos)
+                let pageInfo = self.adapterPageInfo(pageInfo: results.pageInfo)
+                let repositories = self.adapterRepositories(repositories: results.repos)
                 self.delegate?.listViewModel(self, didCompleteSearchFor: pageInfo, with: repositories)
             }
         }
     }
     
-    private func adapterPageInfo(pageInfo: PageInfo) -> PageInformation {
+    func adapterPageInfo(pageInfo: SearchRepositoriesQuery.Data.Search.PageInfo) -> PageInformation {
         return PageInformation(hasNextPage: pageInfo.hasNextPage, hasPreviousPage: pageInfo.hasPreviousPage, startCursor: String(describing: pageInfo.startCursor), endCursor: String(describing: pageInfo.endCursor))
     }
     
-    private func adapterRepositories(repositories: [RepositoryDetails]) -> [Repository] {
-        let repos = repositories.repos.map { repository in
+    func adapterRepositories(repositories: [RepositoryDetails]) -> [Repository] {
+        let repos = repositories.map { repository in
             return Repository(name: repository.name, path: repository.url, owner: repository.owner.login, avatar: repository.owner.avatarUrl, stars: repository.stargazers.totalCount)
         }
         return repos
